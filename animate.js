@@ -17,7 +17,7 @@ revolversound2.src ="audio/revolversound2.mp3";
 var typingAudio = new Audio();
 typingAudio.src ="audio/pechatanie1.mp3";
 
-main.play();
+
 // measure title element
 let titleElement = document.getElementById('title1');
 let titleMeasurements = titleElement.getBoundingClientRect();
@@ -64,18 +64,13 @@ class Particle{
         }
     }
     draw(){
-        
-        /* console.log(rand);
-        console.log(colours[rand]); */
-        /* ctx.fillStyle = colours[rand]; */
-        
+
         ctx.fillStyle = this.colour;
         ctx.strokeStyle = "#FF0000";
         
         ctx.shadowOffsetX = 10; 
         ctx.shadowBlur = 20;
         ctx.shadowColor = "black";
-        
 
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI* 2);
@@ -101,7 +96,7 @@ function animate(){
         particlesArray[i].update();
         particlesArray[i].draw();
     }
-    /* ctx.fillRect(title.x, title.y, title.width, title.height);  */
+    
     requestAnimationFrame(animate);
 }
 animate();
@@ -120,6 +115,7 @@ window.addEventListener('resize', function(){
 })
 
 function deletepage(){
+    main.play();
         var myNode = document.getElementById("canvas1");
         var elem = document.querySelector("#title1");
         var elem2 = document.querySelector(".background");
@@ -215,7 +211,7 @@ function Start(){
     setTimeout(() => { cow.style.opacity=0},15800);
     setTimeout(() => { profile.style.opacity=1},16400);
 
-    //setTimeout(() => { window.location.href = '31.10.html'},4000);
+    
     
     slidebox.addEventListener('click', () => { briffing.style.visibility='visible'});
 }

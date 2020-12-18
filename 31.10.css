@@ -43,15 +43,15 @@ body {
 /* The Modal (background) */
 
 .container {
-  display: flex; /* Hidden by default */
-  position: relative; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: flex;
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   justify-content: center;
   align-items: center;
   visibility: hidden;
@@ -119,7 +119,6 @@ body {
   background-color: black;
 }
 #gunimg {
-  /* margin-left: 430px; */
   position: relative;
   float: right;
 }
