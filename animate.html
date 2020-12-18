@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <title>animate</title>
+
+</head>
+
+    <body>  
+        <!--     ////// slidebox //////    -->
+        <div id="slidebox">
+            <hr id="hrup">
+        <img id='deadcow' src="img/deadcow.jpg">
+        <img id='wolf' src="img/cupper head4.jpg">
+        <img id='cow' src="img/cow.jpg">
+        <img id='profile' src="img/profile1.png">
+        <h1 id="effect" class="line-1 anim-typewriter"></h1>
+        
+        <!-- <form > -->
+            <button id="briffing" onclick="revolversound2.play(), startplay()">Okay</button>
+        <!-- </form> -->
+
+            <hr id="hrdown">
+
+            
+            </div><img id='bulletimg' src="img/bullet.png">
+        <!--     ////// about //////    -->
+<div id="wrapedAbout">
+    <div id='about' class="about">
+        <div id="secondcard" class="secondcard"><p class="info2">this game was made<br> for <br> educational purposes</p></div>
+        <div id="card" class="card">
+            <div class="head">
+                <div class="circle"></div>
+                <img src="img/я2.png" id="head" alt="photo">
+            </div>
+            <div class="info">
+                <h3 class="title">contact me on</h1>
+                <a href="https://www.facebook.com/profile.php?id=100014069742334"><i class="fa fa-facebook" style="font-size: 25px"></i></a>
+                <a href="https://vk.com/id282246645"><i class="fa fa-vk" style="font-size: 25px"></i></a>
+                <h4>zlojbass@rambler.ru</h4>
+              
+            </div>
+        </div>
+    </div>
+</div>
+        
+        <!--     /////first page//////  -->
+<div id="shadow">
+            <div class="background"></div>
+        <div class="remove"><canvas id="canvas1" width="" height=""></canvas>
+        <div id="div"><h1 id="title1">Fridolfinkin</h1>
+        
+        
+            <!-- <img src="/img/pig.jpg" class="img"></div> /*href="menu.html"*/-->
+                <div class="portrait">
+                    <div class="part part-1"></div>
+                    <div class="part part-2"></div>
+                    <div class="part part-3"></div>
+                    <div class="part part-4"></div>
+                    <div class="part part-5"></div>
+                    <div class="part part-6"></div>
+                    <button class="portrait_title" >
+                        <a class="a" onclick="deletepage()" >Start</a>
+                    </button>
+                </div>
+        </div>
+    </div>
+    <!--            ///////////Menu///////////       -->
+        <div id="keyboards" class="keyboards"><img src="img/keyboards.jpg"></div>
+    <div class="container">
+        <div class="box">
+                <div class="button_wrapper">
+                    <button onclick="Start()">
+                <div class="button_label">
+                        Start
+                </div></button>
+        </div>
+                <div class="button_wrapper">
+                <button onclick="keyboard()">
+                <div class="button_label">
+                        Keys
+                </div></button>
+                </div>
+                <div class="button_wrapper">
+                <button onclick="about()">
+                <div class="button_label">
+                        About
+                </div></button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="keyboards"><img src="img/keyboards.jpg"></div>
+</div>
+
+    <svg>
+        <defs>
+            <filter id="shake0">
+                <feTurbulence id="turbulence" baseFrequency='0.8' numOctaves='3' seed='0'/>
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="7"/>
+            </filter>
+            <filter id="shake1">
+                <feTurbulence id="turbulence" baseFrequency='0.8' numOctaves='3' seed='1' />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="5" />
+            </filter>
+            <filter id="shake2">
+                <feTurbulence id="turbulence" baseFrequency='0.8' numOctaves='3' seed='2' />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="8" />
+            </filter>
+            <filter id="shake3">
+                <feTurbulence id="turbulence" baseFrequency='0.2' numOctaves='3' seed='3' />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="7" />
+            </filter>
+            <filter id="shake4">
+                <feTurbulence id="turbulence" baseFrequency='0.2' numOctaves='3' seed='4' />
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="7" />
+            </filter>
+        </defs>
+    </svg>
+    
+    
+    
+    
+    <script src="animate.js"></script>
+
+
+
+
+    </body>
+</html>

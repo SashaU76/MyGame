@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="31.10.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>31/10</title>
+
+</head>
+
+<body>
+    <div class="panel" width = 800 height = 100 >Your money: <div id="money"></div>  You ammo: <div id="ammonition"></div>
+<img id='gunmult' src="img/GunS&W.jpg" width = 50 height = 30>
+</div>
+
+    <div style="display:none;">
+    <img id="store" src="img/PC Computer - Stardew Valley - Farm Buildings.png">
+    <img id="fence" src="img/fenceold1.png">
+    </div>
+<div class="canvasdiv">
+    <canvas id="canvas1"></canvas></div>
+    
+<!-- <button id="nomoneybut" onclick="toggle2()">It's a pity!</button> -->
+    <!-- <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" name="b" value="50" /> +
+        <input type="number" name="a" value="10" /> =
+        <output name="result"></output>
+    </form> -->
+    
+    
+    <!-- Trigger/Open The Modal -->
+ <button class="modalBtn" onclick="toggle()">Store</button>
+    
+<!-- The Modal -->
+    <div  id="blur" class="container">
+    
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p id="greetings">You came to the gun shop <br>
+                How much ammo do <br> Your want to by?</p>
+            <img id="gunimg" class="gun" src="img/smithwesson.png" width="200" height="127">
+                <form>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="100000" 
+                step="5" value="0">
+                <input type="reset" id="reset" value="reset" onclick="resetcost()"></button>
+                <div id="str"></div>
+            </form>
+            <button id="inboxbutton1" onclick="ammo()">ok</button>
+            <button id="inboxbutton1" onclick="toggle()">no, thank You sir</button>
+            <br><button id="gun" class="gun" type="button" onclick="buygun()">Buy gun</button>
+            
+        </div>
+    
+    </div>
+    <div id="nomoneyimg" class="nomoneyimg">You don't have enough money, sir!<br>
+    <button id="nomoneybut"  onclick="toggle2()">It's a pity!</button>
+    </div>
+    </div>
+    <div id='wrapperLoose' class="wrapperLoose">
+        <div id="looseModal" class="looseImg">All cows are dead, sir!<br>
+            <button id="looseBtn" onclick="window.location.reload()">To hell with it!</button>
+        </div>
+    </div>
+    <div id='wrapperLoose2' class="wrapperLoose2">
+        <div id="looseModal2" class="looseImg">You are dead!<br>
+            <button id="looseBtn2" onclick="window.location.reload()">Dammit!!!</button>
+        </div>
+    </div>
+</body>
+<script src="31.10.js"></script>
+</html>
