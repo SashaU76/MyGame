@@ -7,7 +7,7 @@ const numberofparticles = 300;
 let colours =[ '#6d676e','red', '#92B4F4','#f1c40f','#cfdee7'];
 //audio
 var main = new Audio();
-main.src ="audio/stayAlive3.mp3";
+main.src ="audio/stayAlive2.mp3";
 var shot = new Audio();
 shot.src ="audio/gun2.mp3";
 var revolversound = new Audio();
@@ -52,7 +52,7 @@ class Particle{
         this.x += this.directionX[rand];
 
         // check for collision between each particle and title
-        if (
+       /*  if (
             this.x < title.x + title.width &&
             this.x + this.size > title.x &&
             this.y < title.y + title.height &&
@@ -60,8 +60,8 @@ class Particle{
         ){
             this.y -=30;
             this.weight *= -0.5;
-            /* this.directionX =this.directionX =[1];  */
-        }
+            //this.directionX =this.directionX =[1]; 
+        } */
     }
     draw(){
 
