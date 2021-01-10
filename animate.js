@@ -52,7 +52,7 @@ class Particle{
         this.x += this.directionX[rand];
 
         // check for collision between each particle and title
-       /*  if (
+        if (
             this.x < title.x + title.width &&
             this.x + this.size > title.x &&
             this.y < title.y + title.height &&
@@ -61,7 +61,7 @@ class Particle{
             this.y -=30;
             this.weight *= -0.5;
             //this.directionX =this.directionX =[1]; 
-        } */
+        }
     }
     draw(){
 
