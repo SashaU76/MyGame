@@ -14,6 +14,7 @@
 }
 body {
   background-image: url(img/kaktus.jpg);
+  background-size: cover;
 }
 * {
   font-family: "font";
@@ -189,8 +190,8 @@ body {
   position: absolute;
   width: 839px;
   height: 472px;
-  top: 22%;
-  left: 28%;
+  top: 30%;
+  left: 34%;
   align-items: center;
   padding-top: 30%;
   display: block;
