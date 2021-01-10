@@ -13,7 +13,18 @@
 </head>
 
 <body>
-    
+    <!-- модальные окна поражения -->
+    <div id='wrapperLoose2' class="wrapperLoose2">
+        <div id="looseModal2" class="looseImg">You are dead!<br>
+            <button id="looseBtn2" onclick="window.location.reload()">Dammit!!!</button>
+        </div>
+    </div>
+    <div id='wrapperLoose' class="wrapperLoose">
+        <div id="looseModal" class="looseImg">All cows are dead, sir!<br>
+            <button id="looseBtn" onclick="window.location.reload()">To hell with it!</button>
+        </div>
+    </div>
+    <!-- модальные окна поражения /-->
     <div class="panel" width = 800 height = 100 >Your money: <div id="money"></div>  You ammo: <div id="ammonition"></div>
 <img id='gunmult' src="img/GunS&W.jpg" width = 50 height = 30>
 </div>
@@ -23,7 +34,10 @@
     <img id="fence" src="img/fenceold1.png">
     </div>
 <div class="canvasdiv">
-    <canvas id="canvas1"></canvas></div>
+    <canvas id="canvas1">
+        
+
+    </canvas></div>
     
 
     
@@ -56,16 +70,8 @@
     <button id="nomoneybut"  onclick="toggle2()">It's a pity!</button>
     </div>
     </div>
-    <div id='wrapperLoose' class="wrapperLoose">
-        <div id="looseModal" class="looseImg">All cows are dead, sir!<br>
-            <button id="looseBtn" onclick="window.location.reload()">To hell with it!</button>
-        </div>
-    </div>
-    <div id='wrapperLoose2' class="wrapperLoose2">
-        <div id="looseModal2" class="looseImg">You are dead!<br>
-            <button id="looseBtn2" onclick="window.location.reload()">Dammit!!!</button>
-        </div>
-    </div>
+    
+    
     <audio autoplay>
         <source src="audio/кафка 8 бит.mp3" type='audio'>
     </audio>
