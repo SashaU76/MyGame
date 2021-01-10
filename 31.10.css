@@ -89,6 +89,7 @@ body {
 /* Modal Content */
 .modal-content {
   background-image: url(img/ammo.jpg);
+  background-size: cover;
   font-size: 40px;
   color: white;
   margin: 7.5% 0 0 0;
@@ -148,6 +149,7 @@ body {
 /* loose modal */
 .wrapperLoose {
   background-image: url("img/Loose.jpg");
+  background-size: cover;
   position: absolute;
   width: 900px;
   height: 616px;
@@ -186,6 +188,7 @@ body {
 }
 .wrapperLoose2 {
   background-image: url("img/You are dead.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   width: 839px;
