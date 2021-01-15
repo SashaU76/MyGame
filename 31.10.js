@@ -28,6 +28,7 @@ var Zombie = new Audio();
 //условия удаления моба
 let collisian= false;
 let explousionAnimate= false;
+let playMusic= true;
 
 
 const keys = [];
@@ -448,7 +449,8 @@ ctx.drawImage(tree, 0, 0, 473, 542, -45, -30, 473*0.25, 542*0.25);
     characters[i].CollisionsWithFence();
     characters[i].CollisionsWithPlayer();
     }
-    mainTheme.play()
+    if(playMusic===true){mainTheme.play()}
+
     var blur = document.getElementById('blur');
     (blur.classList.contains('active') || playerDead==true) ? cantMove= true : cantMove= false;
     thenShop=Date.now();
@@ -931,4 +933,8 @@ function Loose(){
         setTimeout(() =>
         document.getElementById('wrapperLoose2').style.visibility= 'visible', 500);
     }
+}
+function toggleMusic(){
+    playMusic=!playMusic
+    return playMusic ? mainTheme.play() : mainTheme.pause();
 }

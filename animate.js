@@ -18,6 +18,7 @@ var typingAudio = new Audio();
 typingAudio.src ="audio/pechatanie1.mp3";
 
 
+
 // measure title element
 let titleElement = document.getElementById('title1');
 let titleMeasurements = titleElement.getBoundingClientRect();
